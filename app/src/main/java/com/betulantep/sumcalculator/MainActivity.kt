@@ -9,7 +9,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private var numbersList = ArrayList<Button>()
     private var addNumbersText = "" // görsel güzel gözükmesi için örn: 85 + 25 + 40 gibi
-    private var sumResult = 0 // toplam sonucunu tutuyor
+    private var sumResult : Long = 0 // toplam sonucunu tutuyor
     private var inputNumber = "" // artıya basılmadan önce girilen sayıyı tutuyor
     private var clickEquals = false // + ya basıp sayı girmeden eşittire basılmasına önlem
 
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             showToast(this,"Sayı giriniz")
         } else {
             clickEquals = true
-            sumResult += inputNumber.toInt()
+            sumResult += inputNumber.toLong()
             binding.tvResult.text = sumResult.toString()
             inputNumber = ""
             addNumbersText = ""
@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
         } else {
             //artı dan sonra sayı girmeden eşittire basılmasına önlem
             if (binding.tvSubTotal.text != "" && inputNumber != "") {
-                sumResult += inputNumber.toInt()
+                sumResult += inputNumber.toLong()
                 addNumbersText += " + "
                 binding.tvSubTotal.text = addNumbersText
                 inputNumber = ""
