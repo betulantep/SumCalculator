@@ -160,24 +160,30 @@
 
     <TextView
         android:id="@+id/tvResult"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:textAlignment="textEnd"
         android:textColor="@color/textColorPrimary"
         android:textSize="44sp"
         app:layout_constraintEnd_toEndOf="@+id/tvSubTotal"
+        app:layout_constraintStart_toStartOf="@+id/tvSubTotal"
         app:layout_constraintTop_toBottomOf="@+id/tvSubTotal"
         tools:text="Result" />
 
     <TextView
         android:id="@+id/tvSubTotal"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="60dp"
         android:layout_marginEnd="32dp"
+        android:maxEms="13"
+        android:textAlignment="textEnd"
         android:textColor="@color/textColorPrimary"
         android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="SubTotal" />
 
