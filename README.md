@@ -1,0 +1,1 @@
+<img src="https://github.com/betulantep/SumCalculator/blob/master/app/src/main/res/drawable/sum_image1.png" width="250"><img src="https://github.com/betulantep/SumCalculator/blob/master/app/src/main/res/drawable/sum_image2.png" width="250"><img src="https://github.com/betulantep/SumCalculator/blob/master/app/src/main/res/drawable/sum_image3.png" width="250">
